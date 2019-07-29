@@ -22,13 +22,13 @@ The program takes 3 command-line arguments:
 2. The macroblock size (integer)  
 3. The motion threshold (integer)  
 
-**Path to the video**
+**Path to the video** <br/>
 The output video will be named *source-video-name*_out.mkv and saved in the same folder as the source video.  
   
-**Macroblock size**
+**Macroblock size** <br/>
 A smaller macroblock will predict more precise movements but is more computationally expensive. It is preferred to keep the macroblock size odd for a symmetric neighbourhood search.  
   
-**Motion threshold**
+**Motion threshold** <br/>
 The motion threshold sets the minimum level of contrast required between blocks before they are matched.   
   
 This can be set for specific situations, for example a motion threshold of ~10 or less will match very similar blocks, but videos containing lossy compression artifacts will trigger lots of noise.   
